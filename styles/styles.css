@@ -1,0 +1,195 @@
+
+/* START IMPORT FONTS */
+
+@font-face {
+	font-family: 'Playball';
+	src: url("../fonts/Playball-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url("../fonts/SourceSansPro-Regular.ttf");
+}
+
+/* END IMPORT FONTS */
+
+/* START BACKGROUND PARAMS */
+
+body {
+    font-family: 'Source Sans Pro', 'Trebuchet MS', Arial, sans-serif;
+	background-image: url('../images/paris.jpg');
+    background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+    width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.overlay {
+    background: rgba(180,60,80,0.7);
+	overflow: hidden;
+}
+
+/* END BACKGROUND PARAMS */
+
+/* START FONT DEFS */
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playball', 'Trebuchet MS', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 48pt;
+    text-align: center;
+}
+
+h2 {
+	font-size: 22pt;
+}
+
+/* END FONT DEFS */
+
+/* START ALIGN DEFS */
+
+.vert-align {
+    display: flex;
+	align-items: center;
+}
+
+.content-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+    margin: 0 10px;
+}
+
+/* END ALIGN DEFS */
+
+.h-line {
+	width: 75%;
+	border-top: 2px solid white;
+	height: 0;
+	display: inline-block;
+}
+
+/* START NAVIGATION BAR */
+
+#nav {
+    padding: 0;
+    margin: 0;
+    background: #558;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	border-bottom: 4px solid #444;
+    overflow: visible;
+}
+
+#nav li {
+    display: table;
+    float: left;
+}
+
+#nav a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+	font-size: 14pt;
+}
+
+#nav a:hover {
+    background: #225;
+    border-bottom: 2px solid red;
+    padding-bottom: 23px;
+}
+
+#menu-box {
+    float: right;
+    margin-right: 15px;
+}
+
+/* END NAVIGATION BAR */
+
+/* START TITLE CARD */
+
+#title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 400px;
+	height: 100%;
+	width: 100%;
+}
+
+#title h1 {
+	margin-bottom: 5px;
+	color: white;
+}
+
+/* END TITLE CARD */
+
+/* START CONTENT DEFS */
+
+.color1 { background: #CCE; }
+.color2 { background: #DCD; }
+
+.content-box {
+    padding: 15px 25px;
+	border-radius: 25px 0 0 25px;
+	border-left: 4px solid #226;
+	border-bottom: 4px solid #004;
+	margin: 0 0 20px 50px;
+	display: block;
+}
+
+.content-box a {
+    text-decoration: underline;
+    font-weight: bold;
+	color: inherit;
+}
+
+.content-box a:hover {
+	text-decoration: none;
+}
+
+.content-box p, .content-box a {
+	line-height: 1.25;
+	margin: 5px 0;
+	font-size: 14pt;
+}
+
+/* END CONTENT DEFS */
+
+/* START CONTACT DEFS */
+
+.link-logo {
+    height: auto;
+    width: 25px;
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+
+.link-logo ~ p, .link-logo ~ a {
+    display: inline;
+}
+
+/* END CONTACT DEFS */
