@@ -1,0 +1,184 @@
+<!--
+This is the file purposed for holding HTML templates
+This is NOT CLEARED FOR EDITS except by Administrator
+
+For questions, bugs, or requests, contact Jacob Krol at JacobSKrol@gmail.com
+
+v1.0.0
+-->
+
+
+<!-- SIMPLE TITLE / PARAGRAPH -->
+<h2>Title</h2>
+<p>This is a sample paragraph.</p>
+
+
+<!-- BOLD SELECT TEXT -->
+<p>This is an example of <strong>something</strong> in bold.</p>
+
+
+<!-- ITALIC SELECT TEXT -->
+<p>This is an example of <em>something</em> in italics.</p>
+
+
+<!-- LINKING TEXT TO A WEBSITE -->
+<p>Click <a href="your-site-here.com" target="_blank">here</a> to go to the site.</p>
+
+
+<!-- TITLE / MULTIPLE PARAGRAPH -->
+<h2>Title</h2>
+<p>This is the first paragraph.</p>
+<p>This is the second paragraph under the same tite.</p>
+
+
+<!-- SIMPLE BULLET LIST -->
+<p>This is the optional paragraph that precedes the list. An example:</p>
+<ul>
+    <li>First thing</li>
+    <li>Second thing</li>
+    <li>Third thing</li>
+</ul>
+
+
+<!-- SIMPLE NUMBERED LIST -->
+<p>This is the optional paragraph that precedes the list. An example:</p>
+<ol>
+    <li>First thing</li>
+    <li>Second thing</li>
+    <li>Third thing</li>
+</ol>
+
+
+<!-- INSERT IMAGE BELOW TEXT -->
+<p>See the flyer for the event below. Upload image to GitHub first.</p>
+<img src="./images/NAME-OF-PHOTO.JPG" alt="Photo failed to load" />
+
+
+<!-- INSERT IMAGE IN LEFT CORNER OF LARGE PARAGRAPH -->
+<h2>Optional title for section</h2>
+<img class="float-image-left" src="./images/NAME-OF-PHOTO.JPG" alt="Photo failed to load" />
+<p>This is the paragraph which will flow around the image,
+   keeping it in the top left corner. Upload image to GitHub first.</p>
+
+
+<!-- INSERT IMAGE IN RIGHT CORNER OF LARGE PARAGRAPH -->
+<h2>Optional title for section</h2>
+<img class="float-image-right" src="./images/NAME-OF-PHOTO.JPG" alt="Photo failed to load" />
+<p>This is the paragraph which will flow around the image,
+   keeping it in the top right corner. Upload image to GitHub first.</p>
+
+
+<!-- INSERT IMAGE TO RIGHT OF A SMALL PARAGRAPH -->
+<h2>Optional title for section</h2>
+<div class="content-column-container vert-align">
+    <div class="content-column small-stretch-col">
+        <p>This is the small paragraph to the left of the image.</p>
+    </div>
+    <div class="content-column passive-contain-width">
+        <img src="./images/NAME-OF-PHOTO.JPG" alt="Photo failed to load" />
+    </div>
+</div>
+
+
+<!-- INSERT IMAGE TO LEFT OF A SMALL PARAGRAPH -->
+<h2>Optional title for section</h2>
+<div class="content-column-container vert-align">
+    <div class="content-column">
+        <img src="./images/NAME-OF-PHOTO.JPG" alt="Photo failed to load" />
+    </div>
+    <div class="content-column passive-contain-width">
+        <p>This is the small paragraph to the right of the image.</p>
+    </div>
+</div>
+
+
+<!-- COLUMN WHICH WILL NOT WRAP LONG LINES OF TEXT, TYPICALLY STAND-ALONE -->
+<div class="content-column">
+    <h2>Title</h2>
+
+    <p>First element</p>
+    <p>Second element, appearing in a new row.</p>
+    <p>Final element of column.</p>
+</div>
+
+
+<!-- COLUMN WHICH WILL WRAP LONG LINES OF TEXT, TYPICALLY NEXT TO OTHER COLUMNS -->
+<div class="content-column strict-contain-width">
+    <h2>Title that will be wrapped if very long</h2>
+
+    <p>First element that is very disruptive to other columns' space</p>
+    <p>Second element</p>
+    <p>Third element</p>
+</div>
+
+
+<!-- COLUMN WHICH WILL WRAP LONG LINES OF TEXT, TYPICALLY NEXT TO OTHER COLUMNS -->
+<h2>Title that will not wrap unless wider than entire window</h2>
+<div class="content-column strict-contain-width">
+    <p>First element that is very disruptive to other columns' space</p>
+    <p>Second element</p>
+    <p>Third element</p>
+</div>
+
+
+<!-- MULTIPLE COLUMNS WITH ONE TITLE -->
+<div class="content-column-container">
+    <div class="content-column">
+        <div class="content-subtitle">
+            <h2>Title</h2>
+        </div>
+
+        <div class="content-column-container">
+            <div class="content-column strict-contain-width">
+                <p>Column 1, Element 1</p>
+                <p>Column 1, Element 2</p>
+                <p>Column 1, Element 3</p>
+            </div>
+
+            <div class="content-column strict-contain-width">
+                <p>Column 2, Element 1</p>
+                <p>Column 2, Element 2</p>
+            </div>
+
+            <div class="content-column strict-contain-width">
+                <p>Column 3, Element 1</p>
+                <p>Column 3, Element 2</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- MULTIPLE COLUMNS WITH A TITLE FOR EACH -->
+<div class="content-column-container">
+    <div class="content-column strict-contain-width">
+        <div class="content-subtitle">
+            <h2>Title 1</h2>
+        </div>
+
+        <p>Column 1, Element 1</p>
+        <p>Column 1, Element 2</p>
+        <p>Column 1, Element 3</p>
+
+    </div>
+
+    <div class="content-column strict-contain-width">
+        <div class="content-subtitle">
+            <h2>Title 2</h2>
+        </div>
+
+        <p>Column 2, Element 1</p>
+        <p>Column 2, Element 2</p>
+
+    </div>
+
+    <div class="content-column strict-contain-width">
+        <div class="content-subtitle">
+            <h2>Title 3</h2>
+        </div>
+
+        <p>Column 3, Element 1</p>
+        <p>Column 3, Element 2</p>
+
+    </div>
+</div>

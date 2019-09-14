@@ -48,14 +48,49 @@ h2 {
 	font-size: 22pt;
 }
 
+ul {
+	list-style-type: square;
+}
+
 /* END FONT DEFS */
 
 /* START ALIGN DEFS */
 
 .vert-align {
-    display: flex;
-	align-items: center;
+	display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+
+	-webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
 }
+
+.content-column-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+
+    height: 100%;
+}
+
+.content-column-container
 
 .content-column {
     display: -webkit-box;
@@ -74,7 +109,19 @@ h2 {
     -ms-flex-pack: distribute;
     justify-content: space-around;
 
-    margin: 0 10px;
+    margin: 0 10px 20px 10px;
+}
+
+.passive-contain-width {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+
+	width: 300px;
+}
+
+.strict-contain-width {
+	max-width: 300px;
 }
 
 /* END ALIGN DEFS */
@@ -147,6 +194,30 @@ h2 {
 
 /* END TITLE CARD */
 
+/* START IMAGE FORMATTING */
+
+.content-box img:not(.link-logo) {
+	max-width: 200px;
+	max-height: 200px;
+	margin-bottom: 20px;
+}
+
+.content-box p + img {
+	margin-top: 20px;
+}
+
+.float-image-right {
+	float: right;
+	margin-left: 20px;
+}
+
+.float-image-left {
+	float: left;
+	margin-right: 20px;
+}
+
+/* END IMAGE FORMATTING */
+
 /* START CONTENT DEFS */
 
 .color1 { background: #CCE; }
@@ -159,6 +230,7 @@ h2 {
 	border-bottom: 4px solid #004;
 	margin: 0 0 20px 50px;
 	display: block;
+	overflow: auto;
 }
 
 .content-box a {
@@ -175,6 +247,21 @@ h2 {
 	line-height: 1.25;
 	margin: 5px 0;
 	font-size: 14pt;
+}
+
+.content-box li {
+	font-size: 14pt;
+	margin: 0;
+}
+
+.small-stretch-col {
+	width: 300px;
+	flex-grow: 1;
+	/* align-items: center !important; */
+}
+
+.content-subtitle {
+	text-align: center;
 }
 
 /* END CONTENT DEFS */
