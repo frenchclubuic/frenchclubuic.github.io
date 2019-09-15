@@ -3,6 +3,10 @@
 This is the directory for a basic set of HTML templates made for the current web page. Click to expand on a template for a possible explanation, the code, and a screenshot example.
 
 <details><summary>Simple title / paragraph</summary>
+```
+<h2>Title</h2>
+<p>This is a sample paragraph.</p>
+```
 </details>
 
 <details><summary>Bold select text</summary>
