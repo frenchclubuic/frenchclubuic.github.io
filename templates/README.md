@@ -4,6 +4,58 @@ This is the directory for a basic set of HTML templates made for the current web
 
 *v1.0.0*
 
+## General Guide
+
+#### Tags
+
+The `<` and `>` characters bookend "tags," which define "elements." Examples of tags are `<p>` `<h2>` `<a>` and `<div>`. Different tags are rendered differently. While a `<p>` tag defines a paragraph element of text, a `<div>` tag is used to group other elements for styling or organization.
+
+Most tags must be closed at the end of the element content with the same tag and a forward slash. So a paragraph element may look like `<p>Some text.</p>`.
+
+#### Editing Content
+
+1. Anything not inside of a tag's brackets is safe for editing/replacement.
+
+```html
+<p>You can change this, but <img src="./images/photo.png" alt="not anything inside here" /></p>
+```
+
+2. Text inside a tag's brackets is only safe for edits when in ALL CAPS.
+
+```html
+<p>You can change this, and <img src="./images/CHANGE-THIS-TOO.GIF" alt="but still not this" /></p>
+```
+
+#### Comments
+
+If there is a section you want to leave for later, but not delete, you can comment out areas of the html. This will not be rendered. Make a comment by enclosing the area you want to hide in `<!--` and `-->`. You can also leave comments to keep everything organized or leave a note for later.
+
+```html
+<h2>Subtitle</h2>
+<!-- 
+<p>This is a very old bit of information.</p>
+<p>It can stay here in case we want to add it back later, 
+   but it will not be shown while surrounded by comment syntax</p> 
+-->
+<p>Upcoming surprise 1!</p> <!-- Pizza party -->
+<p>Upcoming surprise 2!</p> <!-- Guest speaker on Friday -->
+```
+
+#### Indenting
+
+Elements in an HTML page make up a "family" of sorts. There are children, parents, and siblings among them. Generally, if one element is inside of another, it is the *child* of the encompassing, *parent* element. All of the children inside together are *siblings*.
+
+```html
+<div> <!-- This is the parent element -->
+    <h2>Title</h2> <!-- This is the child of the div -->
+    <p>Some text.</p> <!-- This is also a child of the div, but is also a sibling of the h2 element -->
+</div>
+```
+
+Notice the indenting. For every level further in we go, there is an additional tab/4-spaces added before the element. This keeps the source content organized and easier to edit and debug.
+
+## Templates
+
 <details><summary>Simple title / paragraph</summary>
 
 ```html
@@ -281,5 +333,3 @@ This is the directory for a basic set of HTML templates made for the current web
 ![Screenshot failed to load](https://raw.githubusercontent.com/jacobkrol/French-Club-at-UIC/master/templates/example-images/example-17.png)
 
 </details>
-
-*v1.0.0*
