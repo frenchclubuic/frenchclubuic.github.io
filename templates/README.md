@@ -1,6 +1,8 @@
 # HTML Templates
 
-This is the directory for a basic set of HTML templates made for the current web page. Click to expand on a template for a possible explanation, the code, and a screenshot example.
+This is the directory for a basic set of HTML templates made for the current web page. Click to expand on a template for select explanations, the code, and a screenshot example.
+
+*v1.0.0*
 
 <details><summary>Simple title / paragraph</summary>
 
@@ -36,7 +38,7 @@ This is the directory for a basic set of HTML templates made for the current web
 <details><summary>Linking text to a website</summary>
 
 ```html
-<p>Click <a href="your-site-here.com" target="\_blank">here</a> to go to the site.</p>
+<p>Click <a href="your-site-here.com" target="_blank">here</a> to go to the site.</p>
 ```
 
 ![Screenshot failed to load](https://raw.githubusercontent.com/jacobkrol/French-Club-at-UIC/master/templates/example-images/example-4.png)
