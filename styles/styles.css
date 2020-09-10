@@ -215,7 +215,12 @@ ul {
 	float: left;
 	margin-right: 20px;
 }
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /* END IMAGE FORMATTING */
 
 /* START CONTENT DEFS */
